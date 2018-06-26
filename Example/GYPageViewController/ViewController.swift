@@ -93,8 +93,8 @@ class ViewController: UITableViewController ,GYPageViewControllerDataSource, GYP
                 pageControllers.append(tabVc)
             }
             self.pageControllers = pageControllers
-            let vc = TestPageViewController(pageTitles: titlesArray, pageControllers: pageControllers)
-            vc.showPageAtIndex(index: 2, animated: false)
+            let vc = TestPageViewController()
+//            vc.showPageAtIndex(index: 2, animated: false)
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

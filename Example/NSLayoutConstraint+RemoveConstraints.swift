@@ -27,7 +27,7 @@ extension NSLayoutConstraint {
             }
         }
         else {
-            self.firstItem.removeConstraint(self)
+            self.firstItem?.removeConstraint(self)
             return
         }
         assert(false, "Failed to remove constraint: \(self)")

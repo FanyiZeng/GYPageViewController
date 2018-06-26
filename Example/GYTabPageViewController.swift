@@ -90,8 +90,8 @@ class GYTabPageViewController: GYPageViewController {
             segControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown
             segControl.selectionIndicatorColor = UIColor(red: 0xdc/0xff, green: 0xb6/0xff, blue: 0x65/0xff, alpha: 1.0)
             segControl.selectionIndicatorHeight = 3.0
-            segControl.selectedTitleTextAttributes = [NSForegroundColorAttributeName:UIColor(red: 0xdc/0xff, green: 0xb6/0xff, blue: 0x65/0xff, alpha: 1.0),NSFontAttributeName:UIFont.systemFont(ofSize: 22)]
-            segControl.titleTextAttributes = [NSForegroundColorAttributeName:UIColor(red: 0x84/0xff, green: 0xb0/0xff, blue: 0xdf/0xff, alpha: 1.0),NSFontAttributeName:UIFont.systemFont(ofSize: 18)]
+            segControl.selectedTitleTextAttributes = [kCTForegroundColorAttributeName:UIColor(red: 0xdc/0xff, green: 0xb6/0xff, blue: 0x65/0xff, alpha: 1.0),kCTFontAttributeName:UIFont.systemFont(ofSize: 22)]
+            segControl.titleTextAttributes = [kCTForegroundColorAttributeName:UIColor(red: 0x84/0xff, green: 0xb0/0xff, blue: 0xdf/0xff, alpha: 1.0),kCTFontAttributeName:UIFont.systemFont(ofSize: 18)]
             segControl.selectionStyle = HMSegmentedControlSelectionStyleFullWidthStripe
             segControl.backgroundColor = UIColor.blue
             segControl.addTarget(self, action: #selector(GYTabPageViewController.segmentValueChanged), for: .valueChanged)
